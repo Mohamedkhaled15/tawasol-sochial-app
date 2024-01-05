@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "28681688070",
+    "project_id": "tawasol-social-app",
+    "storage_bucket": "tawasol-social-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28681688070:android:270260f1d5dc9ef9c69f87",
+        "android_client_info": {
+          "package_name": "com.amr.templet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDe1S82CKLaqnUVkomvK4nG0_PDHotDM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28681688070:android:e10608a1d421e4b1c69f87",
+        "android_client_info": {
+          "package_name": "com.example.tawasol_social_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDe1S82CKLaqnUVkomvK4nG0_PDHotDM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

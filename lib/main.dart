@@ -5,6 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:templet/firebase_options.dart';
+import 'package:templet/view/layout/splash/splash_screen.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 import 'helpers/routes/app_routers.dart';
@@ -61,7 +62,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "ZMall",
+      title: "Tawasol Social App",
       localizationsDelegates: [
         ...context.localizationDelegates,
         CountryLocalizations.delegate,
@@ -72,7 +73,7 @@ class _MyAppState extends State<MyApp> {
       theme: appThemeData(context),
       builder: BotToastInit(),
       navigatorObservers: [BotToastNavigatorObserver()],
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       onGenerateRoute: AppRouters.onGenerateRoute,
       navigatorKey: AppRouters.navigatorKey,
     );

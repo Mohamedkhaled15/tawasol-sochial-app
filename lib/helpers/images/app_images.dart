@@ -13,6 +13,7 @@ class AppImages {
   static const String eyeShowIcon = 'assets/global_icon/eyeShowIcon.svg';
   static const String appLogoNoBackgroundImage =
       'assets/images/appLogoNoBackgroundImage.png';
+  static const String bgImage = 'assets/images/bgImage.png';
   static const String appLogoImage = 'assets/images/appLogoImage.png';
   static const String badgePercentIcon = 'assets/svg/badgePercentIcon.svg';
   static const String cartIcon = 'assets/svg/cartIcon.svg';
@@ -26,4 +27,30 @@ class AppImages {
   static const String profileIcon = 'assets/svg/profileIcon.svg';
   static const String shareIcon = 'assets/svg/shareIcon.svg';
   static const String lockIcon = 'assets/svg/lockIcon.svg';
+
+  static const String arrowLeftIcon = 'assets/svg/arrowLeftIcon.svg';
+  static const String backContainerIcon = 'assets/svg/backContainerIcon.svg';
+  static const String chatIcon = 'assets/svg/chatIcon.svg';
+  static const String deleteIcon = 'assets/svg/deleteIcon.svg';
+  static const String editSquareIcon = 'assets/svg/editSquareIcon.svg';
+  static const String ellipseIcon = 'assets/svg/ellipseIcon.svg';
+  static const String facebookIcon = 'assets/svg/facebookIcon.svg';
+  static const String facebookLineIcon = 'assets/svg/facebookLineIcon.svg';
+  static const String filterIcon = 'assets/svg/filterIcon.svg';
+  static const String globeIcon = 'assets/svg/globeIcon.svg';
+  static const String heartIcon = 'assets/svg/heartIcon.svg';
+  static const String hideIcon = 'assets/svg/hideIcon.svg';
+  static const String homeMainColorIcon = 'assets/svg/homeMainColorIcon.svg';
+  static const String imageIcon = 'assets/svg/imageIcon.svg';
+  static const String instagramIcon = 'assets/svg/instagramIcon.svg';
+  static const String logOutIcon = 'assets/svg/logOutIcon.svg';
+  static const String plusCircleIcon = 'assets/svg/plusCircleIcon.svg';
+  static const String rightArrowIcon = 'assets/svg/rightArrowIcon.svg';
+  static const String sendIcon = 'assets/svg/sendIcon.svg';
+  static const String sendMainColorIcon = 'assets/svg/sendMainColorIcon.svg';
+  static const String showIcon = 'assets/svg/showIcon.svg';
+  static const String xCircleIcon = 'assets/svg/xCircleIcon.svg';
+  static const String xIcon = 'assets/svg/xIcon.svg';
+  static const String backGroundImage = 'assets/svg/backGroundImage.svg';
+  static const String googleIcon = 'assets/svg/googleIcon.svg';
 }

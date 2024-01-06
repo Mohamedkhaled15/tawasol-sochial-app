@@ -45,4 +45,8 @@ class AppLocaleKey {
   static const String logout = 'logout';
   static const String logoutQ = 'logoutQ';
   static const String changePassword = 'changePassword';
+  static const String tawasol = 'tawasol';
+  static const String orLoginWith = 'orLoginWith';
+  static const String signUp = 'signUp';
+  static const String dontHaveAccount = 'dontHaveAccount';
 }

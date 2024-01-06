@@ -43,5 +43,9 @@
     "share": "مشاركة",
     "logout": "تسجيل الخروج",
     "logoutQ": "هل تريد تسجيل الخروج ؟",
-    "changePassword": "تعديل كلمة السر"
+    "changePassword": "تعديل كلمة السر",
+    "tawasol": "Tawasol",
+    "orLoginWith": "او قم بتسجيل الدخول بواسطة",
+    "dontHaveAccount": "ليس لديك حساب ؟",
+    "signUp": "انشاء حساب"
 }

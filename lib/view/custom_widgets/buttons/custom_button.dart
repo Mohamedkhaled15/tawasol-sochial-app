@@ -6,11 +6,12 @@ import '../../../helpers/theme/app_text_style.dart';
 import '../custom_loading/custom_loading.dart';
 
 class CustomButton extends StatelessWidget {
+  final Widget? child;
   final double radius;
   final double? width;
   final double height;
   final TextStyle? style;
-  final String text;
+  final String? text;
   final Widget prefixIcon;
   final Widget suffixIcon;
   final Color? color;
@@ -24,7 +25,8 @@ class CustomButton extends StatelessWidget {
     this.width,
     this.height = 45,
     this.style,
-    required this.text,
+    this.text,
+    this.child,
     this.prefixIcon = const SizedBox(),
     this.suffixIcon = const SizedBox(),
     this.color,
@@ -57,11 +59,13 @@ class CustomButton extends StatelessWidget {
                       children: [
                         prefixIcon,
                         const SizedBox(width: 5),
-                        Text(
-                          text,
-                          textAlign: TextAlign.center,
-                          style: style ?? AppTextStyle.buttonStyle(),
-                        ),
+                        text == null
+                            ? const SizedBox()
+                            : Text(
+                                text ?? "",
+                                textAlign: TextAlign.center,
+                                style: style ?? AppTextStyle.buttonStyle(),
+                              ),
                         const SizedBox(width: 5),
                         suffixIcon,
                       ],
@@ -80,6 +84,7 @@ class CustomButton extends StatelessWidget {
                       child: SizedBox(
                         width: width ?? double.infinity,
                         height: height,
+                        child: child ?? const SizedBox(),
                       ),
                     ),
                   ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:templet/view/layout/auth/screen/login_screen.dart';
+import 'package:templet/view/layout/splash/splash_screen.dart';
 
 import '../../view/custom_widgets/zoom_image/zoom_image_screen.dart';
 import '../../view/layout/home_screen.dart';
@@ -18,6 +20,14 @@ class AppRouters {
       case HomeScreen.routeName:
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
+        );
+      case SplashScreen.routeName:
+        return MaterialPageRoute(
+          builder: (_) => const SplashScreen(),
+        );
+      case LoginScreen.routeName:
+        return MaterialPageRoute(
+          builder: (_) => const LoginScreen(),
         );
 
       default:

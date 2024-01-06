@@ -17,6 +17,13 @@ class AppColor {
     );
   }
 
+  static Color thirdAppColor() {
+    return AppTheme.getByTheme(
+      light: const Color.fromARGB(255, 35, 8, 81),
+      dark: const Color.fromARGB(255, 35, 8, 81),
+    );
+  }
+
   static Color borderColor() {
     return AppTheme.getByTheme(
       light: const Color(0xffE8ECF4),
@@ -49,6 +56,13 @@ class AppColor {
     return AppTheme.getByTheme(
       light: const Color(0xff787878),
       dark: const Color(0xff787878),
+    );
+  }
+
+  static Color lightButtonColor() {
+    return AppTheme.getByTheme(
+      light: const Color(0xffE3E4FC),
+      dark: const Color(0xffE3E4FC),
     );
   }
 

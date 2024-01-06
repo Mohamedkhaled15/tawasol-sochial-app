@@ -34,7 +34,48 @@ class PageContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: statusBarColor ?? AppColor.scaffoldColor(),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          tileMode: TileMode.decal,
+          colors: [
+            const Color(0xff1D2B53),
+            Colors.blue,
+            Colors.deepPurple,
+            const Color(0xff1D2B53),
+            Colors.blue,
+            Colors.deepPurple,
+            const Color(0xff1D2B53),
+            Colors.blue,
+            Colors.deepPurple,
+            const Color(0xff1D2B53),
+            Colors.blue,
+            Colors.deepPurple,
+            const Color(0xff1D2B53),
+            Colors.blue,
+            AppColor.mainAppColor(),
+          ],
+          stops: const [
+            0.0,
+            0.2,
+            0.1,
+            0.0,
+            0.3,
+            0.3,
+            0.0,
+            0.3,
+            0.5,
+            0.0,
+            0.6,
+            0.5,
+            0.4,
+            0.8,
+            0.9
+          ], // Adjust the stops to control sharpness
+        ),
+      ),
+      // color: statusBarColor ?? AppColor.scaffoldColor(),
       child: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle(
           statusBarColor: statusBarForegroundColor,

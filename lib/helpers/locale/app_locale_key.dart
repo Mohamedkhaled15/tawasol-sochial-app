@@ -49,4 +49,5 @@ class AppLocaleKey {
   static const String orLoginWith = 'orLoginWith';
   static const String signUp = 'signUp';
   static const String dontHaveAccount = 'dontHaveAccount';
+  static const String haveAccount = 'haveAccount';
 }

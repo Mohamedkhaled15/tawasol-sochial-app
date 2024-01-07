@@ -9,13 +9,20 @@ import 'package:templet/helpers/utils/navigator_methods.dart';
 import 'package:templet/view/custom_widgets/buttons/custom_button.dart';
 import 'package:templet/view/custom_widgets/custom_form_field/custom_form_field.dart';
 import 'package:templet/view/custom_widgets/page_container/page_container.dart';
-import 'package:templet/view/layout/auth/screen/register_screen.dart';
+import 'package:templet/view/layout/auth/screen/login_screen.dart';
 import 'package:templet/view/layout/home_screen.dart';
 
-class LoginScreen extends StatelessWidget {
-  static const String routeName = 'LoginScreen';
-  const LoginScreen({super.key});
+class RegisterScreen extends StatefulWidget {
+  static const String routeName = 'RegisterScreen';
+  const RegisterScreen({super.key});
 
+  @override
+  State<RegisterScreen> createState() => _RegisterScreenState();
+}
+
+bool isHidden = false;
+
+class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return PageContainer(
@@ -27,17 +34,14 @@ class LoginScreen extends StatelessWidget {
           children: [
             Expanded(
               child: Center(
-                child: Hero(
-                  tag: 22,
-                  child: Text(
-                    tr(AppLocaleKey.tawasol),
-                    style: AppTextStyle.textW50B(),
-                  ),
+                child: Text(
+                  tr(AppLocaleKey.tawasol),
+                  style: AppTextStyle.textW50B(),
                 ),
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 1.4,
+              height: MediaQuery.of(context).size.height / 1.2,
               decoration: BoxDecoration(
                   color: AppColor.whiteColor().withOpacity(0.7),
                   borderRadius: const BorderRadius.only(
@@ -51,15 +55,44 @@ class LoginScreen extends StatelessWidget {
                       CustomFormField(
                         fillColor: AppColor.whiteColor(),
                         radius: 25,
-                        hintText: tr(AppLocaleKey.email),
+                        hintText: tr(AppLocaleKey.name),
                       ),
                       CustomFormField(
                         fillColor: AppColor.whiteColor(),
                         radius: 25,
-                        hintText: tr(AppLocaleKey.password),
+                        hintText: tr(AppLocaleKey.phone),
+                        keyboardType: TextInputType.phone,
                       ),
-                      Text(tr(AppLocaleKey.forgetPassword),
-                          style: AppTextStyle.textM16B()),
+                      CustomFormField(
+                        fillColor: AppColor.whiteColor(),
+                        radius: 25,
+                        hintText: tr(AppLocaleKey.email),
+                        keyboardType: TextInputType.emailAddress,
+                      ),
+                      //Password V
+                      CustomFormField(
+                        fillColor: AppColor.whiteColor(),
+                        radius: 25,
+                        hintText: tr(AppLocaleKey.password),
+                        isPassword: isHidden,
+                        // suffixIcon: GestureDetector(
+                        //     onTap: () {
+                        //       setState(() {
+                        //         isHidden = !isHidden;
+                        //       });
+                        //     },
+                        //     child: isHidden
+                        //         ? SvgPicture.asset(AppImages.hideIcon)
+                        //         : SvgPicture.asset(AppImages.showIcon)),
+                      ),
+                      //Confirm Password V
+                      CustomFormField(
+                        fillColor: AppColor.whiteColor(),
+                        radius: 25,
+                        hintText: tr(AppLocaleKey.confirmPassword),
+                        isPassword: isHidden,
+                      ),
+
                       CustomButton(
                         radius: 25,
                         text: tr(AppLocaleKey.login),
@@ -69,8 +102,7 @@ class LoginScreen extends StatelessWidget {
                               context, HomeScreen.routeName);
                         },
                       ),
-                      Text(tr(AppLocaleKey.orLoginWith),
-                          style: AppTextStyle.textD16B()),
+                      Text(tr(AppLocaleKey.orLoginWith)),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -103,18 +135,19 @@ class LoginScreen extends StatelessWidget {
                           ),
                         ],
                       ),
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(tr(AppLocaleKey.dontHaveAccount),
+                          Text(tr(AppLocaleKey.haveAccount),
                               style: AppTextStyle.textD16B()),
                           TextButton(
                               onPressed: () {
                                 NavigatorMethods.pushNamed(
-                                    context, RegisterScreen.routeName);
+                                    context, LoginScreen.routeName);
                               },
                               child: Text(
-                                tr(AppLocaleKey.signUp),
+                                tr(AppLocaleKey.login),
                                 style: AppTextStyle.textM18B(),
                               )),
                         ],

@@ -1,17 +1,19 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:country_picker/country_picker.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:templet/firebase_options.dart';
-import 'package:templet/view/layout/splash/splash_screen.dart';
+import 'package:templet/view/bottom_navigation/bottom_navigation_screen.dart';
+import 'package:templet/view/layout/auth/screen/login_screen.dart';
+
 import 'package:timeago/timeago.dart' as timeago;
 
 import 'helpers/routes/app_routers.dart';
 import 'helpers/theme/style.dart';
 import 'helpers/theme/theme_enum.dart';
-import 'view/layout/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -73,9 +75,18 @@ class _MyAppState extends State<MyApp> {
       theme: appThemeData(context),
       builder: BotToastInit(),
       navigatorObservers: [BotToastNavigatorObserver()],
-      initialRoute: SplashScreen.routeName,
       onGenerateRoute: AppRouters.onGenerateRoute,
       navigatorKey: AppRouters.navigatorKey,
+      home: StreamBuilder(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return const BottomNavigationScreen();
+          } else {
+            return const LoginScreen();
+          }
+        },
+      ),
     );
   }
 }

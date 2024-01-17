@@ -9,12 +9,12 @@ import 'package:templet/helpers/locale/app_locale_key.dart';
 import 'package:templet/helpers/theme/app_colors.dart';
 import 'package:templet/helpers/theme/app_text_style.dart';
 import 'package:templet/helpers/utils/navigator_methods.dart';
+import 'package:templet/view/bottom_navigation/bottom_navigation_screen.dart';
 import 'package:templet/view/custom_widgets/buttons/custom_button.dart';
 import 'package:templet/view/custom_widgets/custom_form_field/custom_form_field.dart';
 import 'package:templet/view/custom_widgets/page_container/page_container.dart';
 import 'package:templet/view/custom_widgets/validation/validation_mixin.dart';
 import 'package:templet/view/layout/auth/screen/login_screen.dart';
-import 'package:templet/view/layout/home_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   static const String routeName = 'RegisterScreen';
@@ -43,7 +43,8 @@ class _RegisterScreenState extends State<RegisterScreen> with ValidationMixin {
           display: _confirmPasswordEC.text,
           phone: _phoneEC.text);
       if (res == 'success') {
-        NavigatorMethods.pushNamedAndRemoveUntil(context, HomeScreen.routeName);
+        NavigatorMethods.pushNamedAndRemoveUntil(
+            context, BottomNavigationScreen.routeName);
       } else {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(res)));

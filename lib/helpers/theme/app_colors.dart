@@ -3,10 +3,28 @@ import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
 class AppColor {
+  static LinearGradient gradientColor() {
+    return AppTheme.getByTheme(
+      light: const LinearGradient(
+        colors: [Color(0xff5151C6), Color(0xff888BF4)],
+      ),
+      dark: const LinearGradient(
+        colors: [Color(0xff5151C6), Color(0xff888BF4)],
+      ),
+    );
+  }
+
   static Color mainAppColor() {
     return AppTheme.getByTheme(
       light: const Color(0xff2F80ED),
       dark: const Color(0xff2F80ED),
+    );
+  }
+
+  static Color purpleColor() {
+    return AppTheme.getByTheme(
+      light: const Color(0xff4A369D),
+      dark: const Color(0xff4A369D),
     );
   }
 

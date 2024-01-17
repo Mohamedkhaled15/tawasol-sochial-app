@@ -29,6 +29,7 @@ class CustomFormField extends StatefulWidget {
   final String? otherSideTitle;
   final ui.TextDirection? textDirection;
   final Country? country;
+  final InputBorder? border;
 
   const CustomFormField({
     Key? key,
@@ -52,6 +53,7 @@ class CustomFormField extends StatefulWidget {
     this.otherSideTitle,
     this.country,
     this.passwordColor,
+    this.border,
   }) : super(key: key);
 
   @override
@@ -113,12 +115,13 @@ class _CustomFormFieldState extends State<CustomFormField> {
                 hintStyle: AppTextStyle.hintStyle(),
                 fillColor: widget.fillColor ?? AppColor.offWhiteColor(),
                 filled: true,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(widget.radius),
-                  borderSide: BorderSide(
-                    color: widget.unFocusColor ?? AppColor.borderColor(),
-                  ),
-                ),
+                border: widget.border ??
+                    OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(widget.radius),
+                      borderSide: BorderSide(
+                        color: widget.unFocusColor ?? AppColor.borderColor(),
+                      ),
+                    ),
                 disabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(widget.radius),
                   borderSide: BorderSide(

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:templet/view/layout/add_post/screen/add_post_screen.dart';
 import 'package:templet/view/layout/auth/screen/login_screen.dart';
 import 'package:templet/view/layout/auth/screen/register_screen.dart';
+import 'package:templet/view/layout/home/screen/home_screen.dart';
 import 'package:templet/view/layout/splash/splash_screen.dart';
 
+import '../../view/bottom_navigation/bottom_navigation_screen.dart';
 import '../../view/custom_widgets/zoom_image/zoom_image_screen.dart';
-import '../../view/layout/home_screen.dart';
 
 class AppRouters {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
@@ -20,7 +22,7 @@ class AppRouters {
         );
       case HomeScreen.routeName:
         return MaterialPageRoute(
-          builder: (_) => const HomeScreen(),
+          builder: (_) => HomeScreen(),
         );
       case SplashScreen.routeName:
         return MaterialPageRoute(
@@ -33,6 +35,14 @@ class AppRouters {
       case RegisterScreen.routeName:
         return MaterialPageRoute(
           builder: (_) => const RegisterScreen(),
+        );
+      case BottomNavigationScreen.routeName:
+        return MaterialPageRoute(
+          builder: (_) => const BottomNavigationScreen(),
+        );
+      case AddPostScreen.routeName:
+        return MaterialPageRoute(
+          builder: (_) => AddPostScreen(),
         );
 
       default:

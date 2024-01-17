@@ -48,5 +48,11 @@
     "orLoginWith": "او قم بتسجيل الدخول بواسطة",
     "dontHaveAccount": "ليس لديك حساب ؟",
     "signUp": "انشاء حساب",
-    "haveAccount": "لديك حساب ؟"
+    "haveAccount": "لديك حساب ؟",
+    "addPost": "إنشاء منشور",
+    "post": "نشر",
+    "writeSomething": "أكتب شيء ...",
+    "popular": "مشهور",
+    "tending": "تريند",
+    "following": "متابع"
 }

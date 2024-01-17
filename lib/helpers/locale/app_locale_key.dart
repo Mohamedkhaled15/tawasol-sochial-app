@@ -50,4 +50,10 @@ class AppLocaleKey {
   static const String signUp = 'signUp';
   static const String dontHaveAccount = 'dontHaveAccount';
   static const String haveAccount = 'haveAccount';
+  static const String addPost = 'addPost';
+  static const String writeSomething = 'writeSomething';
+  static const String post = 'post';
+  static const String following = 'following';
+  static const String tending = 'tending';
+  static const String popular = 'popular';
 }

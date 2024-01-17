@@ -15,6 +15,9 @@ class AppImages {
       'assets/images/appLogoNoBackgroundImage.png';
   static const String bgImage = 'assets/images/bgImage.png';
   static const String appLogoImage = 'assets/images/appLogoImage.png';
+  static const String woman = 'assets/images/woman.png';
+  static const String man = 'assets/images/man.png';
+
   static const String badgePercentIcon = 'assets/svg/badgePercentIcon.svg';
   static const String cartIcon = 'assets/svg/cartIcon.svg';
   static const String homeIcon = 'assets/svg/homeIcon.svg';
@@ -24,7 +27,7 @@ class AppImages {
   static const String contactIcon = 'assets/svg/contactIcon.svg';
   static const String languageIcon = 'assets/svg/languageIcon.svg';
   static const String logoutIcon = 'assets/svg/logoutIcon.svg';
-  static const String profileIcon = 'assets/svg/profileIcon.svg';
+
   static const String shareIcon = 'assets/svg/shareIcon.svg';
   static const String lockIcon = 'assets/svg/lockIcon.svg';
 
@@ -40,7 +43,7 @@ class AppImages {
   static const String globeIcon = 'assets/svg/globeIcon.svg';
   static const String heartIcon = 'assets/svg/heartIcon.svg';
   static const String hideIcon = 'assets/svg/hideIcon.svg';
-  static const String homeMainColorIcon = 'assets/svg/homeMainColorIcon.svg';
+
   static const String imageIcon = 'assets/svg/imageIcon.svg';
   static const String instagramIcon = 'assets/svg/instagramIcon.svg';
   static const String logOutIcon = 'assets/svg/logOutIcon.svg';
@@ -53,4 +56,13 @@ class AppImages {
   static const String xIcon = 'assets/svg/xIcon.svg';
   static const String backGroundImage = 'assets/svg/backGroundImage.svg';
   static const String googleIcon = 'assets/svg/googleIcon.svg';
+  static const String categoryIcon = 'assets/svg/categoryIcon.svg';
+  static const String categoryFilIcon = 'assets/svg/categoryFilIcon.svg';
+  static const String homeFillIcon = 'assets/svg/homeFillIcon.svg';
+  static const String notificationFillIcon =
+      'assets/svg/notificationFillIcon.svg';
+  static const String profileFillIcon = 'assets/svg/profileFillIcon.svg';
+  static const String profileIcon = 'assets/svg/profileIcon.svg';
+  static const String plusIcon = 'assets/svg/plusIcon.svg';
+  static const String searchIcon = 'assets/svg/searchIcon.svg';
 }

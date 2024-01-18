@@ -13,14 +13,14 @@ class CloudMethods {
     required String uid,
     required String username,
     String? profilePic,
-    required File file,
+    File? file,
     required String displayName,
   }) async {
     String res = "Some Error";
 
     try {
       String postId = const Uuid().v1();
-      String postImage = await StorageMethods().uploadImageToStorage(file);
+      String postImage = await StorageMethods().uploadImageToStorage(file!);
       PostModel postModel = PostModel(
           uId: uid,
           userName: username,

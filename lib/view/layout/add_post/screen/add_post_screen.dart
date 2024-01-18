@@ -16,7 +16,7 @@ import 'package:templet/view/custom_widgets/custom_app_bar/custom_app_bar.dart';
 class AddPostScreen extends StatefulWidget {
   static const String routeName = 'AddPostScreen';
 
-  AddPostScreen({super.key});
+  const AddPostScreen({super.key});
 
   @override
   State<AddPostScreen> createState() => _AddPostScreenState();
@@ -29,11 +29,12 @@ class _AddPostScreenState extends State<AddPostScreen> {
   uploadPost() async {
     try {
       String res = await CloudMethods().uploadPost(
-          description: descriptionEC.text,
-          uid: 'fRXC2E3Oi0gfmM1oEcxVPPrfqN73',
-          username: "Mohamed khaled",
-          file: file ?? File(''),
-          displayName: '123456789');
+        description: descriptionEC.text,
+        uid: 'fRXC2E3Oi0gfmM1oEcxVPPrfqN73',
+        username: "Mohamed khaled",
+        file: file,
+        displayName: '123456789',
+      );
     } catch (e) {
       e.toString();
     }

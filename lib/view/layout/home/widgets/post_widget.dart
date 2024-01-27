@@ -5,6 +5,7 @@ import 'package:templet/helpers/images/app_images.dart';
 import 'package:templet/helpers/theme/app_colors.dart';
 import 'package:templet/helpers/theme/app_text_style.dart';
 import 'package:templet/helpers/utils/date_methods.dart';
+import 'package:templet/view/custom_widgets/custom_network_image/custom_network_image.dart';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({super.key, required this.index, required this.data});
@@ -73,7 +74,8 @@ class PostWidget extends StatelessWidget {
                 ),
                 data.docs[index]['postImage']?.isEmpty
                     ? Container()
-                    : Image.network(data.docs[index]['postImage']),
+                    : CustomNetworkImage(
+                        imageUrl: data.docs[index]['postImage']),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

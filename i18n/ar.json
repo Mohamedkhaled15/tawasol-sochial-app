@@ -54,5 +54,8 @@
     "writeSomething": "أكتب شيء ...",
     "popular": "مشهور",
     "tending": "تريند",
-    "following": "متابع"
+    "following": "متابع",
+    "typeUserName": "أكتب إسم المستخدم",
+    "searchUser": "إبحث عن مستخدم",
+    "showSearchResult": "عرض نتائج البحث "
 }

@@ -56,4 +56,7 @@ class AppLocaleKey {
   static const String following = 'following';
   static const String tending = 'tending';
   static const String popular = 'popular';
+  static const String showSearchResult = 'showSearchResult';
+  static const String searchUser = 'searchUser';
+  static const String typeUserName = 'typeUserName';
 }

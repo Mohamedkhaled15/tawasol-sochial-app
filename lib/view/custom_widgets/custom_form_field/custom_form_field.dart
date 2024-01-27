@@ -30,6 +30,7 @@ class CustomFormField extends StatefulWidget {
   final ui.TextDirection? textDirection;
   final Country? country;
   final InputBorder? border;
+  final FocusNode? focusNode;
 
   const CustomFormField({
     Key? key,
@@ -54,6 +55,7 @@ class CustomFormField extends StatefulWidget {
     this.country,
     this.passwordColor,
     this.border,
+    this.focusNode,
   }) : super(key: key);
 
   @override
@@ -98,6 +100,7 @@ class _CustomFormFieldState extends State<CustomFormField> {
                     ? ui.TextDirection.rtl
                     : ui.TextDirection.ltr,
             child: TextFormField(
+              focusNode: widget.focusNode,
               controller: widget.controller,
               onChanged: widget.onChanged,
               validator: widget.validator,

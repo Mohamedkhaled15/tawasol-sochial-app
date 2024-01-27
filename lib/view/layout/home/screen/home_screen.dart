@@ -4,7 +4,6 @@ import 'package:templet/helpers/theme/app_colors.dart';
 import 'package:templet/helpers/theme/app_text_style.dart';
 import 'package:templet/view/layout/home/widgets/post_list.dart';
 import 'package:templet/helpers/locale/app_locale_key.dart';
-import 'package:templet/view/custom_widgets/custom_form_field/custom_form_field.dart';
 import 'package:templet/view/layout/home/widgets/search_widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -27,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
+    FocusScope.of(context).unfocus();
     return Scaffold(
       body: SafeArea(
         child: NestedScrollView(
@@ -38,9 +38,13 @@ class _HomeScreenState extends State<HomeScreen>
                 flexibleSpace: FlexibleSpaceBar(
                     background: isScrolled
                         ? const SizedBox.shrink()
-                        : const SearchWidget(),
+                        : SearchWidget(
+                            enableTyping: true,
+                            enableNavigate: true,
+                            borderColor: AppColor.offWhiteColor(),
+                          ),
                     title: const Padding(
-                      padding: EdgeInsets.only(top: 30),
+                      padding: EdgeInsets.only(top: 40),
                     )),
               ),
               SliverPersistentHeader(

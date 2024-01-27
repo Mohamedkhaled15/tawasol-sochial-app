@@ -17,6 +17,7 @@ class AppImages {
   static const String appLogoImage = 'assets/images/appLogoImage.png';
   static const String woman = 'assets/images/woman.png';
   static const String man = 'assets/images/man.png';
+  static const String profileBGIcon = 'assets/images/profileBG.png';
 
   static const String badgePercentIcon = 'assets/svg/badgePercentIcon.svg';
   static const String cartIcon = 'assets/svg/cartIcon.svg';

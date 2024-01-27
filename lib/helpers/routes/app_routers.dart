@@ -3,6 +3,7 @@ import 'package:templet/view/layout/add_post/screen/add_post_screen.dart';
 import 'package:templet/view/layout/auth/screen/login_screen.dart';
 import 'package:templet/view/layout/auth/screen/register_screen.dart';
 import 'package:templet/view/layout/home/screen/home_screen.dart';
+import 'package:templet/view/layout/search/search_screen.dart';
 import 'package:templet/view/layout/splash/splash_screen.dart';
 
 import '../../view/bottom_navigation/bottom_navigation_screen.dart';
@@ -42,7 +43,11 @@ class AppRouters {
         );
       case AddPostScreen.routeName:
         return MaterialPageRoute(
-          builder: (_) => AddPostScreen(),
+          builder: (_) => const AddPostScreen(),
+        );
+      case SearchScreen.routeName:
+        return MaterialPageRoute(
+          builder: (_) => const SearchScreen(),
         );
 
       default:

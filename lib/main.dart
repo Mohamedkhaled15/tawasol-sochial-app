@@ -5,9 +5,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:templet/firebase_options.dart';
-import 'package:templet/view/bottom_navigation/bottom_navigation_screen.dart';
-import 'package:templet/view/layout/auth/screen/login_screen.dart';
+import 'package:tawasol/firebase_options.dart';
+import 'package:tawasol/view/bottom_navigation/bottom_navigation_screen.dart';
+import 'package:tawasol/view/layout/auth/screen/login_screen.dart';
 
 import 'package:timeago/timeago.dart' as timeago;
 

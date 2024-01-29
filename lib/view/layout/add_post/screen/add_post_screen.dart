@@ -1,17 +1,16 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:templet/global/services/cloud.dart';
-import 'package:templet/helpers/images/app_images.dart';
-import 'package:templet/helpers/images/image_methods.dart';
-import 'package:templet/helpers/locale/app_locale_key.dart';
-import 'package:templet/helpers/theme/app_colors.dart';
-import 'package:templet/helpers/theme/app_text_style.dart';
-import 'package:templet/view/custom_widgets/custom_app_bar/custom_app_bar.dart';
+import 'package:tawasol/global/services/cloud.dart';
+import 'package:tawasol/helpers/images/app_images.dart';
+import 'package:tawasol/helpers/images/image_methods.dart';
+import 'package:tawasol/helpers/locale/app_locale_key.dart';
+import 'package:tawasol/helpers/theme/app_colors.dart';
+import 'package:tawasol/helpers/theme/app_text_style.dart';
+import 'package:tawasol/view/custom_widgets/custom_app_bar/custom_app_bar.dart';
 
 class AddPostScreen extends StatefulWidget {
   static const String routeName = 'AddPostScreen';
@@ -28,6 +27,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
   TextEditingController descriptionEC = TextEditingController();
   uploadPost() async {
     try {
+      // ignore: unused_local_variable
       String res = await CloudMethods().uploadPost(
         description: descriptionEC.text,
         uid: 'fRXC2E3Oi0gfmM1oEcxVPPrfqN73',

@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:templet/helpers/images/app_images.dart';
-import 'package:templet/helpers/theme/app_colors.dart';
+import 'package:tawasol/helpers/images/app_images.dart';
+import 'package:tawasol/helpers/theme/app_colors.dart';
 
 class RotatedContainer extends StatelessWidget {
   const RotatedContainer({

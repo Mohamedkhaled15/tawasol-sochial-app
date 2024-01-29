@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:templet/helpers/images/app_images.dart';
+import 'package:tawasol/helpers/images/app_images.dart';
+import 'package:tawasol/helpers/theme/app_colors.dart';
+import 'package:tawasol/helpers/utils/navigator_methods.dart';
+import 'package:tawasol/view/layout/add_post/screen/add_post_screen.dart';
+import 'package:tawasol/view/layout/category/screen/category_screen.dart';
+import 'package:tawasol/view/layout/notification/screen/notification_screen.dart';
+import 'package:tawasol/view/layout/profile/screen/profile_screen.dart';
 
-import 'package:templet/helpers/theme/app_colors.dart';
-import 'package:templet/helpers/utils/navigator_methods.dart';
-import 'package:templet/view/layout/add_post/screen/add_post_screen.dart';
-import 'package:templet/view/layout/category/screen/category_screen.dart';
-import 'package:templet/view/layout/home/screen/home_screen.dart';
-import 'package:templet/view/layout/notification/screen/notification_screen.dart';
-import 'package:templet/view/layout/profile/screen/profile_screen.dart';
+import '../layout/home/screen/home_screen.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
   static const String routeName = 'BottomNavigationScreen';
@@ -112,7 +112,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
           HomeScreen(),
           ProfileScreen(),
           CategoryScreen(),
-          NotificationScreen(),
+          const NotificationScreen(),
         ],
       ),
     );

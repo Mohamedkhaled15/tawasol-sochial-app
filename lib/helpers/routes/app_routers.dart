@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:templet/view/layout/add_post/screen/add_post_screen.dart';
-import 'package:templet/view/layout/auth/screen/login_screen.dart';
-import 'package:templet/view/layout/auth/screen/register_screen.dart';
-import 'package:templet/view/layout/home/screen/home_screen.dart';
-import 'package:templet/view/layout/search/search_screen.dart';
-import 'package:templet/view/layout/splash/splash_screen.dart';
+import 'package:tawasol/view/layout/add_post/screen/add_post_screen.dart';
+import 'package:tawasol/view/layout/auth/screen/login_screen.dart';
+import 'package:tawasol/view/layout/auth/screen/register_screen.dart';
+import 'package:tawasol/view/layout/home/screen/home_screen.dart';
+import 'package:tawasol/view/layout/search/search_screen.dart';
+import 'package:tawasol/view/layout/splash/splash_screen.dart';
 
 import '../../view/bottom_navigation/bottom_navigation_screen.dart';
 import '../../view/custom_widgets/zoom_image/zoom_image_screen.dart';

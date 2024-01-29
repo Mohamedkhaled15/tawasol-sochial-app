@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:templet/view/layout/home/widgets/post_widget.dart';
+import 'package:tawasol/view/layout/home/widgets/post_widget.dart';
 
 class PostList extends StatelessWidget {
   const PostList({super.key});

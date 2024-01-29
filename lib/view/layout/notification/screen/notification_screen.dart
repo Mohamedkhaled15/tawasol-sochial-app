@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:templet/helpers/theme/app_colors.dart';
+import 'package:tawasol/helpers/theme/app_colors.dart';
 
 class NotificationScreen extends StatelessWidget {
   static const String routeName = 'NotificationScreen';

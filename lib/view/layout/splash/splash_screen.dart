@@ -1,11 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:templet/helpers/locale/app_locale_key.dart';
-import 'package:templet/helpers/theme/app_text_style.dart';
-import 'package:templet/helpers/utils/navigator_methods.dart';
-import 'package:templet/view/custom_widgets/page_container/page_container.dart';
-import 'package:templet/view/layout/auth/screen/login_screen.dart';
-import 'package:templet/view/layout/splash/widgets/rotated_container.dart';
+import 'package:tawasol/helpers/locale/app_locale_key.dart';
+import 'package:tawasol/helpers/theme/app_text_style.dart';
+import 'package:tawasol/view/custom_widgets/page_container/page_container.dart';
+import 'package:tawasol/view/layout/auth/screen/login_screen.dart';
+import 'package:tawasol/view/layout/splash/widgets/rotated_container.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String routeName = 'SplashScreen';

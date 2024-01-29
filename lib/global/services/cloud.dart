@@ -1,8 +1,9 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:templet/global/model/post.dart';
-import 'package:templet/global/services/storage.dart';
+import 'package:tawasol/global/model/post.dart';
+import 'package:tawasol/global/services/storage.dart';
+
 import 'package:uuid/uuid.dart';
 
 class CloudMethods {
